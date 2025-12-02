@@ -1,0 +1,2 @@
+I have implemented nanoid for an eight character UUID in the model customerLogin
+
