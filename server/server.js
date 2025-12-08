@@ -12,13 +12,10 @@ connectDB();
 app.use(express.json());
 
 // routes for admin
-app.use('/orders', require('./routes/orderRoutes'));
-app.use('/api/users', require('./routes/userRoutes'));
+app.use('/admin', require('./routes/admin/adminRoutes'));
 
 // routes for customer
-app.use('/login', require('./routes/user/loginRoutes'));
-app.use('/createAccount', require('./routes/user/accountRoutes'));
-app.use('/api/product', require('./routes/productRoutes'));
+app.use('/customer', require('./routes/user/customerRoutes'));
 
 // error handling middleware
 app.use(errorHandler);

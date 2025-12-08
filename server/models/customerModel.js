@@ -10,7 +10,7 @@ const customerSchema = mongoose.Schema({
         type: String,
         required: true,
         unique: true,
-        default: () => nanoid(8), // generate a unique id of length 8
+        default: () => nanoid(5), // generate a unique id of length 8
     },
     
 },
